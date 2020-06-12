@@ -5,7 +5,7 @@ All commands used for the population genetics analyzes performed in Boitard et a
 
 These commands call private python or R scripts, which can be found in directory 'scripts'.
 
-Directory 'compareHMM' contains the code allowing to detect selection from genomic time series (Paris et al, 2020), downloaded from https://github.com/CyrielParis/compareHMM.
+Directory 'compareHMM' should contain the code allowing to detect selection from genomic time series (Paris et al, 2020), downloaded from https://github.com/CyrielParis/compareHMM.
 
 Other public software (plink1.9, GCTA, shapeit, selscan) are needed for some commands and should be installed before running main.sh.
 
