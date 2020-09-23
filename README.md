@@ -1,4 +1,4 @@
-# Asturiana_analysis
+# Detection of selection signatures in the cattle breed Asturiana de los Valles
 Scripts used in Boitard et al (under revision) to detect selection signatures in the cattle breed Asturiana de los Valles
 
 All commands used for the population genetics analyzes performed in Boitard et al (under revision) can be found in main.sh.
