@@ -5,6 +5,9 @@ myfolder=$2
 # filters ngs data on callrate - 5 missing individuals allowed
 plink --bfile $myfolder/input_files/image_auto --geno 0.34 --chr $chro --out $myfolder/results/nSL/image_cr2_$chro --cow --make-bed
 
+# stores call rate at remaining sites
+plink --bfile $myfolder/results/nSL/image_cr2_$chro --out $myfolder/results/nSL/image_cr2_$chro --cow --missing
+
 # phase genotypes and inpute missing data - SHAPEIT2.v790 was used in our study
 shapeit --input-bed $myfolder/results/nSL/image_cr2_$chro --effective-size 1000 --rho 0.00004 --output-max $myfolder/results/nSL/image_cr2_$chro -W 5 --force
 

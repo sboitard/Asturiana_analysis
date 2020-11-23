@@ -33,6 +33,13 @@ gunzip $myfolder/plink_files/chip_auto_gen4.grm.gz
 R -f $myfolder/scripts/rm_rel.R --args chip_auto_gen4 $myfolder
 plink --bfile $myfolder/plink_files/chip_auto_gen4 --keep $myfolder/plink_files/chip_auto_gen4_unrelated.indiv --cow --make-bed --out $myfolder/plink_files/chip_auto_gen4_unrelated
 
+# population size estimation
+plink --bfile $myfolder/plink_files/chip_auto_gen4_unrelated --cow --freq --family --out $myfolder/plink_files/chip_auto_gen4_unrelated
+R -f $myfolder/scripts/format_NB.R --args $myfolder
+python $myfolder/scripts/cat_generations.py $myfolder
+nb_snp=$(wc -l $myfolder/results/time_series/chip_auto_gen4_unrelated_NBinput_G4.txt | cut -d" " -f1) 
+R -f $myfolder/scripts/estim_NB.R --args $myfolder $nb_snp
+
 # time series analysis - chip specific markers
 cut -f 2 $myfolder/plink_files/common_auto_gen4.bim > $myfolder/plink_files/common_auto_gen4.snp
 plink --bfile $myfolder/plink_files/chip_auto_gen4_unrelated --exclude $myfolder/plink_files/common_auto_gen4.snp --make-bed --cow --out $myfolder/plink_files/chip_only_auto_gen4_unrelated
