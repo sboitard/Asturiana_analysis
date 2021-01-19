@@ -1,7 +1,7 @@
 # Detection of selection signatures in the cattle breed Asturiana de los Valles
-Scripts used in Boitard et al (under revision) to detect selection signatures in the cattle breed Asturiana de los Valles
+Scripts used in Boitard et al (Provisionaly accepted, Front. Genet. doi: 10.3389/fgene.2021.575405) to detect selection signatures in the cattle breed Asturiana de los Valles
 
-All commands used for the population genetics analyzes performed in Boitard et al (under revision) can be found in main.sh.
+All commands used for the population genetics analyzes performed in this study can be found in main.sh.
 
 These commands call private python or R scripts, which can be found in directory 'scripts'.
 
