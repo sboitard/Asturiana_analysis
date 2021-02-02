@@ -1,5 +1,5 @@
 # Detection of selection signatures in the cattle breed Asturiana de los Valles
-Scripts used in Boitard et al (Provisionally accepted, Front. Genet. doi: 10.3389/fgene.2021.575405) to detect selection signatures in the cattle breed Asturiana de los Valles
+Scripts used in Boitard et al (2021, Front. Genet. doi: 10.3389/fgene.2021.575405) to detect selection signatures in the cattle breed Asturiana de los Valles
 
 All commands used for the population genetics analyzes performed in this study can be found in main.sh.
 
