@@ -1,8 +1,8 @@
 myfolder=$1
 # these variables need to be replaced by the name of input file
-myvcf=/work/sboitard/Project_IMAGE.856/Project_analyses/Bovin_Madrid_SNP_calling.49049/final_filtered_variants_SNP.vcf
-my50=/work/sboitard/asturiana/plink_files/sementales_IA_X/sementales_IA
-my800=/work/sboitard/asturiana/plink_files/Asturiana/Asturiana_FinalReport
+myvcf=$myfolder/input_files/asturiana_WGS_SNP.vcf
+my50=$myfolder/input_files/asturiana_50K
+my800=$myfolder/input_files/asturiana_800K
 
 # NGS data auto
 plink --vcf $myvcf --vcf-min-gq 10 --chr-set 29 --biallelic-only strict --allow-extra-chr --make-bed --out $myfolder/input_files/image_auto  --chr 1-29
