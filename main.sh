@@ -7,7 +7,7 @@ mkdir results/time_series
 mkdir results/nSL
 
 # 0: data preparation 
-# this step should be run from the raw data, not provided here
+# this step requires uploading raw genotype data at https://zenodo.org/record/6602591
 sh scripts/data_preparation.sh $myfolder
 
 # 1a: filtering and merging the 3 datasets, autosomal SNPs
