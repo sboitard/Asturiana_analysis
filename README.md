@@ -9,4 +9,4 @@ Directory 'compareHMM' should contain the code allowing to detect selection from
 
 Other public software (plink1.9, GCTA, shapeit, selscan) are needed for some commands and should be installed before running main.sh.
 
-The NGS, 50K and 800K raw datasets used in these analyzes are public but not provided here (url are provided in the manuscript).
+The NGS, 50K and 800K raw datasets used in these analyzes can be found at https://zenodo.org/record/6602591.
